@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Clock</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <h1>What time is it?</h1>
+
+    <!-- Clock container -->
+    <div class="clock_container">
+        <h2>Current Time: <span id="currentTime"></span></h2>
+        <div class="clock_body">
+            <div class="handHolder"></div>
+            <div class="clock_hand seconds" id="seconds"></div>
+            <div class="clock_hand minutes"></div>
+            <div class="clock_hand hours"></div>
+        </div>
+    </div>
+
+    <!-- Set an alarm -->
+    <div class="alarm_box">
+        <h2>SET ALARM</h2>
+        <div class="alarmCommands">
+            <input id="alarmInput" type="text" placeholder="Set alarm">
+            <button id="setAlarm">SET</button>
+        </div>
+    </div>
+    <!-- Script link -->
+    <script src="main.js"></script>
+</body>
+</html>
