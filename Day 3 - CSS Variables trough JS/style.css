@@ -1,0 +1,48 @@
+ /* Add CSS variables */
+:root {
+     --width: 50px;
+     --height: 50px;
+     --shadowX: 0px;
+     --shadowY: 0px;
+     --shadow: 0px;
+     --radius: 0px;
+     --color: #fff;
+     --marginX: auto;
+     --marginY: 0px;
+}
+body {
+      text-align: center;
+      background: #193549;
+      color: white;
+      font-family: 'helvetica neue', sans-serif;
+      font-weight: 100;
+      font-size: 30px;
+}
+.controls {
+      margin: 30px 50px;
+      display: flex;
+      justify-content: center;
+}
+.controls > *{
+    margin: 0 55px;
+}
+input {
+    display: block;
+    margin: 0 auto;
+    width:100px;
+    outline: none;
+}
+/* img{
+    padding: var(--spacing);
+    background-color: var(--base);
+    filter: blur(var(--blur));
+} */
+.box{
+    background-color: #fff;
+    width: var(--width);
+    height: var(--height);
+    box-shadow: var(--shadowX) var(--shadowY) var(--shadow) rgba(0,0,0,0.5);
+    border-radius: var(--radius);
+    background-color: var(--color);
+    margin: var(--marginY) var(--marginX);
+}

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Scoped CSS Variables and JS</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Title -->
+  <h1>Transformer</h1>
+
+  <div class="controls">
+    <div class="widthAndHeight">
+      <!-- Box width -->
+      <label for="boxWidth">Width:<span class="info" id="width"></span></span></label>
+      <input id="boxWdith" name="width" type="range" min="0" max="1000" value="50" data-sizing="px">
+      <!-- Box height -->
+      <label for="boxHeight">Height:<span class="info" id="height"></span></label>
+      <input id="boxHeight" name="height" type="range" min="0" max="1000" value="50" data-sizing="px">
+      <!-- Margin X -->
+      <label for="marginX">Margin X: <span class="info" id="marginX"></span></label>
+      <input type="range" name="marginX" id="maringX" min="0" max="1000"  data-sizing="px">
+      <!-- Margin Y -->
+      <label for="marginY">Margin Y: <span class="info" id="marginY"></span></label>
+      <input type="range" name="marginY" id="maringX" min="0" max="1000" value="0" data-sizing="px">
+    </div>
+    
+    <!-- Box shadow -->
+    <div class="boxShadowContainer">
+      <!-- Shadow X -->
+      <label for="boxShadowX">Shadow X:<span class="info" id="shadowX"></span></label>
+      <input type="range" name="shadowX" id="boxShadowX" min="0" max="50" value="0" data-sizing="px">
+      <!-- Shadow Y -->
+      <label for="boxShadowY">Shadow Y:<span class="info" id="shadowY"></span></label>
+      <input type="range" name="shadowY" id="boxShadowY" min="0" max="50" value="0" data-sizing="px">
+      <!-- Shadow blur(?) -->
+      <label for="boxShadow">Shadow blur(?):<span class="info" id="shadow"></span></label>
+      <input type="range" name="shadow" id="boxShadow" min="0" max="50" value="0" data-sizing="px">
+    </div>
+
+    <div class="radius">
+      <!-- Box radius -->
+      <label for="radius">Radius: <span class="info" id="radius"></span></label>
+      <input type="range" name="radius" id="radius" min="0" max="100" value="0" data-sizing="%">
+      <!-- Color -->
+      <label for="color">Color:</label>
+      <input type="color" name="color" id="color">
+    </div>
+  </div>
+
+  <div class="box"></div>
+
+  <!-- Script source -->
+  <script src="main.js"></script>
+</body>
+</html>
