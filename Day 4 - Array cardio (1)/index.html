@@ -69,10 +69,8 @@
 
     // Array.prototype.reduce()
     // 4. How many years did all the inventors live?
-    const years = inventors.reduce((total, inventor) => {
+    const years = inventors.reduce((total, inventor) => total + (inventor.passed - inventor.year),0)
       // Total (moze da bide imenuvano bilo kako), sluzi za da vodi evidencija za sobiranjeto (sumata) od nizata (array-ot), dodeka 0 na krajot ja oznacuva pocetnata vrednost.
-      return total + (inventor.passed - inventor.year);
-    }, 0)
     console.log(years);
 
     // 5. Sort the inventors by years lived
