@@ -14,32 +14,28 @@
         <button id="startGame">Start Game</button>
     </div>
 
-    <!-- Choose your playing option -->
-    <div class="choose">
-        <h2>Choose option:</h2>
-        <button class="option" id="rock" data-option="rock">Rock</button>
-        <button class="option" id="paper" data-option="scroll">Paper</button>
-        <button class="option" id="scissors" data-option="scissors">Scissors</button>
-    </div>
-
-    <!-- Countdown timer -->
-    <div class="countdown">3</div>
-
     <!-- Game window -->
     <div class="game">
         <!-- Player -->
         <div class="player">
             <div class="player_option"></div>
-            <div class="player_score">Player: 0</div>
+            <p class="player_score">Player: 0</p>
         </div>
-
+        <h3>vs</h3>
         <!-- Computer -->
         <div class="computer">
             <div class="computer_option"></div>
-            <div class="computer_score">Computer: 0</div>
+            <p class="computer_score">Computer: 0</p>
         </div>
     </div>
-
+    
+    <!-- Choose your playing option -->
+    <div class="choose">
+        <h2>Choose option:</h2>
+        <button class="option" id="rock" data-option="rock">Rock</button>
+        <button class="option" id="paper" data-option="paper">Paper</button>
+        <button class="option" id="scissors" data-option="scissors">Scissors</button>
+    </div>
     
     <!-- Script link -->
     <script src="main.js"></script>
