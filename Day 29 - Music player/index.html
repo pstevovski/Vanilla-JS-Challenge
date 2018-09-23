@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Music Player</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>MusicPlayer</h1>
+    <div class="wrapper">
+        <!-- Song image -->
+        <div class="song_image"></div>
+
+        <!-- Song title -->
+        <div class="song_title">
+            <p id="song_name"></p>
+            <p id="song_duration"></p>
+        </div>
+
+        <!-- Slider -->
+        <div class="progress">
+            <div class="progress_bar">
+                <div class="progress_bar_filled"></div>
+            </div>
+        </div>
+
+        <!-- Commands -->
+        <div class="commands">
+            <button id="prevSong" title="Previous song"><i class="material-icons">skip_previous</i></button>
+            <button id="playSong" title="Play/Pause song"><i class="material-icons" id="play_pause">play_circle_outline</i></button>
+            <button id="stopSong" title="Stop song"><i class="material-icons">stop</i></button>
+            <button id="nextSong" title="Next song"><i class="material-icons">skip_next</i></button>
+        </div>
+    </div>
+
+    <!-- Script source -->
+    <script src="main.js"></script>
+</body>
+</html>
