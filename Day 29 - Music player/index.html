@@ -16,7 +16,6 @@
         <!-- Song title -->
         <div class="song_title">
             <p id="song_name"></p>
-            <p id="song_duration"></p>
         </div>
 
         <!-- Slider -->
@@ -25,11 +24,16 @@
                 <div class="progress_bar_filled"></div>
             </div>
         </div>
-
+        <div class="times">
+            <p id="song_currentTime"></p>
+            <p id="song_duration"></p>
+        </div>
+        
         <!-- Commands -->
         <div class="commands">
             <button id="prevSong" title="Previous song"><i class="material-icons">skip_previous</i></button>
-            <button id="playSong" title="Play/Pause song"><i class="material-icons" id="play_pause">play_circle_outline</i></button>
+            <button id="playSong" title="Play song"><i class="material-icons">play_circle_outline</i></button>
+            <button id="pauseSong" title="Pause song"><i class="material-icons">pause_circle_outline</i></button>
             <button id="stopSong" title="Stop song"><i class="material-icons">stop</i></button>
             <button id="nextSong" title="Next song"><i class="material-icons">skip_next</i></button>
         </div>

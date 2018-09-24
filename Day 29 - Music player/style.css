@@ -52,7 +52,36 @@ h1{
 .song_title{
     width: 70%;
     display: flex;
+    justify-content: flex-start;
+    overflow: hidden;
+}
+.song_title #song_name{
+    width: 100%;
+    text-align: center;
+    white-space: nowrap;
+}
+
+.song_title #song_name.active{
+    animation: songNameAnimation 20s ease forwards infinite;
+}
+.times{
+    width: 70%;
+    display: flex;
     justify-content: space-between;
+}
+#song_currentTime{
+    display: none;
+}
+@keyframes songNameAnimation{
+    0%{
+        transform: translateX(0px)
+    }
+    50%{
+        transform:translateX(-100%)
+    }
+    100%{
+        transform:translateX(0px);
+    }
 }
 .wrapper .progress{
     width: 80%;
@@ -65,15 +94,13 @@ h1{
     border-radius: 50px;
 }
 .progress_bar_filled{
-    width: 30%;
+    width: 0%;
     height: 7px;
     background-color: tomato;
     border-radius: 50px;
 }
 .commands{
     padding: 5px;
-    /* position: absolute;
-    bottom: 0; */
     width: 100%;
     display: flex;
     justify-content: space-around;
@@ -84,11 +111,6 @@ h1{
     transition: 0.2s ease;
 }
 
-
-
-
-
-/* ////////////////////////// */
 /* MATERIAL ICONS SUPPORT */
 .material-icons {
 	font-family: 'Material Icons';
